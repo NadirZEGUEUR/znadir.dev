@@ -1,0 +1,66 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+body{
+    background-color:  #eee;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+}
+
+
+nav{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 76.5px;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(238, 238, 238, 0.5);
+    z-index: 99;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+b{
+    font-weight: 900;
+}
+
+.monLogo{
+    width: 29px;
+    
+}
+
+#maTete{
+    position: sticky;
+    bottom: 1vh;
+}
+
+.section{
+    height: calc(100vh - 76.5px);
+}
+
+#qui-suis-je{
+    background-color: blueviolet;
+}
+#que-fais-je{
+    
+    background-color: cadetblue;
+}
+#mes-projets{
+    
+    background-color: darkgoldenrod;
+}
+#contact{
+    
+    background-color: goldenrod;
+}

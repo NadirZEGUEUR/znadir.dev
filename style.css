@@ -2,13 +2,14 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    /* box-sizing: border-box; */
 }
 body{
     background-color:  #eee;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -21,7 +22,7 @@ nav{
     height: 76.5px;
     position: sticky;
     top: 0px;
-    background-color: rgba(238, 238, 238, 0.5);
+    background-color: rgba(238, 238, 238, 0);
     z-index: 99;
 }
 
@@ -41,26 +42,30 @@ b{
 }
 
 #maTete{
-    position: sticky;
-    bottom: 1vh;
+    /* position: absolute; */
+    position: fixed;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 400px;
+    left: 31vw;
+    bottom: 0vh;
 }
 
 .section{
+    width: 100%;
     height: calc(100vh - 76.5px);
+    scroll-behavior: unset;
 }
 
 #qui-suis-je{
     background-color: blueviolet;
 }
 #que-fais-je{
-    
     background-color: cadetblue;
 }
 #mes-projets{
-    
     background-color: darkgoldenrod;
 }
 #contact{
-    
     background-color: goldenrod;
 }

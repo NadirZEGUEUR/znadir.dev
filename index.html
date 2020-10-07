@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Nadir's site</title>
+ 
+
 </head>
 <body>
     <nav>
@@ -36,6 +38,20 @@
     </section>
 </body>
 
+
+<!-- Load Babel -->
+<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- Your custom script here -->
+<div id="output"></div>
+<script type="text/babel">
+const getMessage = () => "Hello World";
+document.getElementById('output').innerHTML = getMessage();
+</script>
+
+<!-- My script -->
 <script type="text/javascript" src="script.js" charset="utf-8"></script>
+
+
 
 </html>

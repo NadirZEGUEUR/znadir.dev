@@ -1,29 +1,92 @@
-let section1 = document.querySelector("#qui-suis-je");
+
+
+
+// Gestion des sections
+
+let AllSections = document.querySelectorAll(".section");
+let section_QuiSuisJe = document.querySelector("#qui-suis-je");
+let currentSection = section_QuiSuisJe;
+var iterator = AllSections.values();
+
+function nextSection(){
+  
+  
+  if (!iterator.next().done){
+    console.log(iterator.next());
+  }else{
+    
+  }
+    
+
+  currentSection.scrollIntoView();
+  return currentSection.scrollHeight;
+}
+
+//  Animation tête
+
 let maTete = document.querySelector("#maTete");
 
-  var el = document.querySelector("#link1");
-  console.log(typeof(el));
-  if (el){
-      el.addEventListener("click", function(e){
-        console.log("d");
-        
+function hideMaTete(){
+    maTete.animate([
+        // keyframes
+        { transform: 'translateY(0px)' }, 
+        { transform: 'translateY(300px)' }
+      ], { 
+        // timing options
+        duration: 500,
+        easing : 'ease-out'
+      });
     
-        maTete.animate([
-            // keyframes
-            { transform: 'translateY(0px)' }, 
-            { transform: 'translateY(300px)' }
-          ], { 
-            // timing options
-            duration: 1000,
-            easing : 'ease-out'
-          });
-        //   maTete.style.visibility = "hidden";
+    setTimeout(()=>{
+        maTete.style.visibility = "hidden";
+    }, 500);
+}
 
-        window.scroll(0,1000);
-    });
-  }else{
-      console.log("g");
-  }
+function showMaTete(){
+    setTimeout(()=>{
+        maTete.style.visibility = "visible";
+    }, 500);
+
+    maTete.animate([
+        // keyframes
+        { transform: 'translateY(300px)' }, 
+        { transform: 'translateY(0px)' }
+      ], { 
+        // timing options
+        duration: 500,
+        easing : 'ease-out'
+      }); 
+}
+
+
+
+// Evenments déclanchant l'animation de la tête
+let lien_QuiSuisJe = document.querySelector("a[href='#qui-suis-je']");
+
+lien_QuiSuisJe.addEventListener("click", ()=>{
+    
+    showMaTete();
+   
+});
+
+window.addEventListener("scroll", ()=>{
+    hideMaTete();
+    setTimeout(()=>{
+      if (maTete.visibility){
+        window.scroll({
+          //top: `${section1.getAttribute('positionTop') += 1000}`,
+          top: `${section_QuiSuisJe.style.top += 1000}`,
+          left: 0,
+          behavior : 'smooth'
+        });
+      }
+    }, 500);
+
+    window.removeEventListener("scroll");
+    //TODO add event listener when it goes back to the 1st section
+    //el.removeEventListener("click", hideMaTete);
+    //el.addEventListener("click", showMaTete);
+});
     
 
 

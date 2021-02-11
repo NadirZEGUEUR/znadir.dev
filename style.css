@@ -2,7 +2,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    border: 1px dashed rgb(67, 104, 7, 0.2);
 }
 
 html{
@@ -13,7 +14,7 @@ html{
 }
 
 html, body{
-    width: 100%;
+    width: auto;
     text-align: center;
     
 }
@@ -32,9 +33,8 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
     height: 76.5px;
-    margin-bottom: 38px;
+    margin-bottom: 2%;
     position: sticky;
     top: 0px;
     background-color: rgba(238, 238, 238, 0);
@@ -47,7 +47,7 @@ nav a{
 }
 
 b{
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 .monLogo{
@@ -55,32 +55,123 @@ b{
 }
 
 #maTete{
-    /* position: absolute; */
     position: fixed;
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 500px;
-    left: 27vw;
-    bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    left: 5vw;
+    bottom: calc(-100vh - 300px);
+    z-index: 98;
+}
+
+.EyeScopeCircle{
+    position: absolute;
+    bottom: -15vw;
+    left: 28vw;
+    z-index: 99;
 }
 
 .section{
-    width: 100%;
-    height: calc(100vh - 76.5px);
+    position: relative;
+    width: auto;
+    /* height: calc(100vh - 76.5px); */
     scroll-snap-align: end;
     scroll-snap-stop: always;
-    margin-top: 100px;
-    text-align: center;
+    /* margin-top: 100px; */
+    
+}
+
+.section:first-of-type{
+    /* margin-top: 100%; */
 }
 
 .section :not(img){
     font-size: 1.5em;
-    text-align: center;
+    line-height: 1em;
+    text-align: right;
 }
 
 #qui-suis-je{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: rgb(192, 152, 152);
+    /* box-shadow: 0px 2px 50px 10px inset; */
 }
+
+
+.presentationText *{
+    display: inline;
+    position: relative;
+    /* top: 15vh; */
+    /* right: 10vw; */
+    /* text-align: left; */
+    /* line-height: 1em; */
+    /* font-size: 12px; */
+    z-index: 100;
+}
+
+.presentationText > b{
+    /* font-size: 1rem; */
+}
+
+.glitch{
+    transform: translate(-50%, -50%);
+    /* display: inline; */
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+}
+.glitch:before, .glitch:after {
+    /* display: inline; */
+    white-space: nowrap;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    opacity: .8;
+    /* font-size: 1.1em; */
+    font-weight: 900;
+    overflow: visible;
+    /* text-align: right; */
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-2px, 2px)
+    }
+    40% {
+        transform: translate(-2px, -2px)
+    }
+    60% {
+        transform: translate(2px, 2px)
+    }
+    80% {
+        transform: translate(2px, -2px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+.glitch:after {
+    color: #f0f;
+    z-index: -2;
+    animation: glitch .8s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+    /* animation-delay: 4s; */
+}
+.glitch:before {
+    color: #0ff;
+    z-index: -1; 
+    animation: glitch .8s cubic-bezier(.25, .46, .45, .94) both infinite;
+    /* animation-delay: 4s; */
+}
+
+/* 
+
 #que-fais-je{
     background-color: cadetblue;
 }
@@ -89,7 +180,7 @@ b{
 }
 #contact{
     background-color: goldenrod;
-}
+} */
 
 .technos{
     /* background-color: royalblue; */
@@ -101,5 +192,5 @@ b{
 .techno img{
     width: 100px;
     /* height: 2px; */
-
 }
+

@@ -2,20 +2,28 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfolio and blog of Nadir ZEGUEUR">
+    <meta name="keywords" content="Nadir ZEGUEUR, Nadir, ZEGUEUR, Developper, Web Developper, Développeur Web">
+    <meta name="author" content="Nadir ZEGUEUR">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>Nadir's site</title>
+    <title>Nadir's personal website</title>
 
 
 </head>
 
 <body>
-    <nav>
+    <nav class="menu">
         <a href="#qui-suis-je" id="link1">
             <h4>Qui suis-je ?</h4>
         </a>
@@ -31,44 +39,265 @@
         </a>
     </nav>
 
-    <section class="section" id="qui-suis-je">
-        <div class="presentationText">
-            <span>Salut ! <br /> Je suis</span>
+    <section class="section s1" id="qui-suis-je">
+        <div class="s1__text">
+            <span>Salut ! Je m'appelle</span>
             <br />
-            <span><b class="glitch" data-text="Nadir ZEGUEUR">Nadir ZEGUEUR</b></span>
+            <cite><b data-text="Nadir ZEGUEUR">Nadir ZEGUEUR</b></cite>
             <br />
-            <span>
-                Je suis à la recherche d’un stage pour mon premier envol ! <br />
-                pour 6 mois <br />
-                prochainement début juillet
-            </span>
+            <div class="s1_text_announcement">
+                <h4>Je suis à la recherche d’un stage pour mon premier envol !</h4>
+                <i class="fas fa-hourglass-start" alt="Icone durée"><time class="duree-de" datetime="P120D">4-6 mois</time><time class="duree-a" datetime="P180D"></time></i> <br />
+                <i class="far fa-calendar-alt" alt="Icone calendrier"><time class="debut" datetime="Date()">Dispo immédiate</time></i>
+                <i class="fas fa-map-marker-alt"><address>Lyon, France</address>, Télétravail ok</i>
+            </div>
+            <a href="#contact" class="s1_text_contact-cta">Contacter</a>
         </div>
-
-        <!-- <svg class="EyeScopeCircle" width="563" height="566" viewBox="0 0 563 566" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="281.705" cy="282.87" rx="281" ry="282.5" fill="url(#paint0_linear)" fill-opacity="0.39" />
-            <defs>
-                <linearGradient id="paint0_linear" x1="281.705" y1="0.370361" x2="281.705" y2="565.37"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2DE329" />
-                    <stop offset="1" stop-color="#97FD95" />
-                </linearGradient>
-            </defs>
-        </svg> -->
-        <!-- <img src="maTete.png" id="maTete" alt="Nadir's Photo"> -->
-    </section>
-    <section class="section" id="que-fais-je">
-        <p>Que fais-je</p>
-        <div class="technos">
-
+        <div class="s1__image">
+            <img src="maTete.png" class="maTete" alt="Nadir's Photo"/>
         </div>
+    </section>
+    <section class="section s2" id="que-fais-je">
+        
+        <div class="s2_text">
+            <h1 class="s2_subheadline" data-text="technos utilisées">Parmi les technos web que j’ai utilisé</h1>
+            <p class="s2_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur veritatis quos dolor perspiciatis nulla expedita corrupti temporibus. Eveniet sequi odit voluptatem, mollitia maxime quaerat quas repudiandae ipsum delectus ullam.</p>
+        </div>
+        <ul class="s2_techUsed">
+            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+            <li data-text="bootstrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg" alt="bootstrap icon"></li>
+            <li data-text="bulma"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bulma.svg" alt="bulma icon"></li>
+            <li data-text="greensock"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/greensock.svg" alt="greensock icon"></li>
+            <li data-text="node"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/node-dot-js.svg" alt="node js icon" ></li>
+            <li data-text="express"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/express.svg" alt="express icon"></li>
+            <li data-text="angular"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/angular.svg" alt="angular icon"></li>
+            <li data-text="php"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/php.svg" alt="php icon"></li>
+            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+            <li data-text="codeigniter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/codeigniter.svg" alt="codeigniter icon"></li>
+            <li data-text=""><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" alt="mysql icon"></li>
+            <li data-text="wordpress"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wordpress.svg" alt="wordpress icon"></li>
+            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+        </ul>
+    </section>
 
+
+        <!-- <div class="app">
+            <div class="hs full">
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+                <div style="width: 200px; height: 200px; background-color: aqua;">content</div>
+            </div>
+        </div> -->
+    
+    <section class="section s3" id="mes-projets">
+        <h4>Mes Projets</h4>
+            <div class="projects">
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                            <li data-text="java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="java icon"></li>
+                        </ul>
+                    </div>
+                    
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+                <div class="project">
+                    <h5 class="project-title">MuMo app</h5>
+        
+                    <div class="project-card">
+                        <img src="LAOCOON_XVIe_11.png" alt="Ecran de l'oeuvre du laocoon sur l'application du Musée des Moulages de Lyon" class="project-image">
+                        <ul class="project-techUsed">
+                            <li data-text="html5" ><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="html5 icon"></li>
+                            <li data-text="css3" ><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="css3 icon"></li>
+                            <li data-text="javascript" ><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="javascript icon"></li>
+                            <li data-text="ionic"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" alt="ionic icon"></li>
+                            <li data-text="cordova"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachecordova.svg" alt="cordova icon"></li>
+                        </ul>
+                    </div>
+        
+                    <p class="project_description">Une appli web dans le cadre d’un projet à la fac.
+                        Appli permettant la création d’une galerie photo, l’extraction et la sauvegarde de palettes de couleurs présentes dans celles-ci.</p>
+                </div>
+            </div>
+
+
+        
     </section>
-    <section class="section" id="mes-projets">
-        <p>sec3</p>
-    </section>
-    <section class="section" id="sites-inspi">
-        <h3>Quelques sites qui m'inspirent</h3>
+    
+    <section class="section s4" id="sites-inspi">
+        <h4>Quelques sites qui m'inspirent</h4>
         <ul>
             <li>
                 <a href="https://dev.to/"></a>
@@ -82,28 +311,71 @@
             <li>
                 <a href="https://devresourc.es/"></a>
             </li>
+            <li>
+                <a href="https://developers.google.com/web/"></a>
+            </li>
+            <li>
+                <a href="https://web.dev/"></a>
+            </li>
+            <li>
+                <a href="https://web.dev/"></a>
+            </li>
+            <li>
+                <a href="https://uxplanet.org/">https://uxplanet.org/</a>
+            </li>
         </ul>
 
-
-
-
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi repellat, distinctio non similique error dolore, et, eius laborum neque minus consequuntur omnis quis? Eos, vero nulla enim quibusdam nobis deleniti!</p>
 
     </section>
-    <section class="section" id="contact">
-        <p>sec4</p>
+    <section class="section s5" id="MonBackground">
+        <h2>Mon background</h2>
+        <div class="s5_formation">
+            <h5>Background en ingénierie des logiciels</h5>
+            <p>Durant la formation j'ai fait le tour de toutes les phases du cycle de vie logiciel, allant de l'analyse des besoins avancés, passant par la conception, codage et tests; jusqu'à la maintenance.
+                CQFD voulait dire pour nous Coût Qualité Fonctionnalité Délai, c'est le résumé des grands enjeux qui ont conduit à la naissance du domaine du génie logiciel.
+                Ces notions étaient au coeur des études :
+                Réutilisation, Bonnes pratiques de conception et codage
+                Refactoring et Réingénirie
+                Conventions d'équipes et méthodes agiles
+            </p>
+        </div>
+        <div class="s5_formation">
+            <h5>Intêret pour le web</h5>
+            <p>Durant ma formation en Génie Logiciel, l'ecosystème du web commencait à retenir mon attention, les standards d'Html et CSS était en pleine évolution, y'avait le début de l'emergence des SPA grâce à l'évolution de Ajax et ECMAscript, des frameworks javascript tel que EmberJS ont vu le jour, en 2019 j'ai vu un grand potentiel du web d'oû l'envie de me former d'avantage dans les technologies environnantes, étant donné en GL on ne faisait que peu de pratiques, d'oû mon choix de poursuivre une autre formation soit plus axé sur le web.
+                Dans ma formation actuelle, on a resolidifier les bases des technos web, appri Angular, bien méditer sur les enjeux de l'UX et de l'ergonomie en général, on a pu travailler sur un projet avec un client réel, le Musée des Moulages de Lyon, on était confronter à pleins de contraintes durant le projet, malgré ça on a pu bien nous organiser pour livrer et plus ou moins satisfaire notre client. On été à la bour je ne le cache pas aussi ! On a formé une équipe composé de la classe entière vu qu'on était en deux options: Direction Technique et Direction Artistique, on sait mit en 2 DA et 2 DT, y'avait deux,trois profs jouant les Product owners on a nommé un camarade en tant que Scrum Master, le projet était décomposer en 8 sprints et chaqu'une des équipes s'en est vu attribuer un.
+                Y'avait un socle de technos web avancé et de la théorie aussi :
+                Java, Android, Javascript, Angular
+                UX et ergonomie, User stories, Journey maps, de l'UX autour du marketing digital et l'e-commerce
+                Outillage et méthodes agiles : Package bundlers... Scrum...
+            </p>
+        </div>
+        <div class="s5_formation">
+            <h5>Etudes transversales en autodidacte</h5>
+            <p>Durant ma formation en GL, j'était aussi attirer par le coté visuel du web, j'avais toujour l'envie de paufiner les interfaces des exercices jusqu'à en oublier l'objectif principal. J'ai passé beaucoup de mon temps de repos dans l'apprentissage des règles générales du design visuel, j'ai enchainé par le webdesign, la théorie des couleurs, tout en apprenant Html5 et CSS3, c'était tellement dur, j'ai pu apprendre pas mal de connaissances qui m'ont été bien bénéfiques pour élever par la suite et encore toujour, ma consience en l'importance de l'expérience des utilisateurs, en terme d'utilisabilité, d'épanouissement, de l'Accessibilité, des enjeux du SEO et de l'IA.
+                Du coup j'ai développer des sens plutot bien éguisés qui me permettront de collaborer avec des spécialistes de ces domaines là, jusqu'à être autonome et porter d'autres casquètes :
+                Conscience accrue des aspects ergonomiques et esthetiques de l’UX
+                Conscience du coté invisible du web, des bots de référencement, des webservices
+                Sensible à l'SEO et l'Accessibilité si un projet le requiert
+                
+            </p>
+        </div>
+
+        
+        
+
+    </section>
+    <section class="section s6" id="contact">
+        <h4>Contactez moi !</h4>
+        <p>sec4
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum alias neque fuga accusamus consequuntur. Animi libero, omnis quae odio, doloremque architecto quos reprehenderit perspiciatis quasi, dignissimos asperiores rerum excepturi!
+        </p>
     </section>
 </body>
-
 
 <!-- Load Babel -->
 <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<!-- Your custom script here -->
-<div id="output"></div>
-<script type="text/babel">
-    const getMessage = () => "Hello World";
-    document.getElementById('output').innerHTML = getMessage();
-</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>

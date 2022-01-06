@@ -4,6 +4,7 @@
     GSAP code
 **/
 gsap.registerPlugin(ScrollTrigger);
+// document.designMode = "on";
 
 // gsap.to(".maTete",{
 //   scrollTrigger: "#qui-suis-je",

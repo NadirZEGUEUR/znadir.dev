@@ -374,6 +374,7 @@ body{
     font-weight: 600;
 }
 
+
 .s1_text_contact-cta{
     text-decoration: none;
     font-size: .5em;
@@ -400,6 +401,7 @@ body{
     /* box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25); */
     box-shadow: none;
   }
+
   .s2{
     /* background-color: var(--accent-color); */
     /* color: white; */
@@ -1041,236 +1043,61 @@ body{
     }
 
     .s6{
-        
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-gap: 1em;
+        padding: 0 !important;
+        text-align: center;
+        height: 50vh;
+       /* display: grid; */
+       /* grid-template-columns: 1fr 1fr; */
+       /* grid-gap: 1em; */
     }
-    .s6 h4{
+    .s6 h6{
         width: 100%;
-        font-size: clamp(20px,1.2em,44px);
+        font-size: clamp(20px,1em,44px);
         /* align-self: center;
         /* display: absolute; */
         /* transform: translateY(-2em); */
-        margin-top: 1.5em;
+        margin-top: 1.5em; 
+        margin-bottom: 1.5em;
     }
    
-    .s6 > form{
-        /* display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; */
-        /* align-content: center; */
-        background-color: hsla(0, 0%, 70%, 0.70);
-        width: 100%;
-        min-height: 80vh;
-        /* height: fit-content; */
-        padding: 1em 1em;
-        border-radius: 0.8em;
-    }
-    
-    .s6 > form *{
-        width: 100%;
-        font-size: 0.8em;
-        font-style: italic;
-    }
-
-
-    .s6 > form label{
-        /* font-size: 0.6em; */
-        /* margin-top: 2em; */
-    }
-
-    .s6 > form label:not(.subjects > label, .captcha label){
-        font-size: 0.5em;
-        font-weight: 600;
-        /* margin-top: 2em; */
-    }
-
-    .s6 input::placeholder,
-    .s6 textarea::placeholder{
-        padding: 0;
-        margin: 0;
-        font-size: 0.6em;
-        position: absolute;
-        top: 0.5em;
-        left: 1em;
-    }
-    
-    .s6 input:not([type="submit"]),
-    .s6 textarea{
-        border: 0;
-        backdrop-filter: blur(148px);
-        background-color:hsla(0, 0%, 100%, 0.47);
-        padding: 0.5em;
-        padding-top: 1em;
-        font-size: 0.5em;
-    }
-
-    .s6 input:focus,
-    .s6 textarea:focus{
-        outline: none;
-        backdrop-filter: blur(0px);
-    }
-
-
-    
-    .s6 input{
-        border-radius: 1em;
-    }
-
-    .s6 textarea{
-        border-radius: 0.5em;
-    }
-
-    .s6 input[type="email"]{
-        margin: 0.5em 0;
-    }
-
-    .s6 label[for="subject"]{
-        margin-top: .5em;
-    }
-    .s6 .subjects{
-        display: flex;
-        align-content: space-between;
-        gap: 0.25em;
-        margin-top: 0.25em;
-    }
-    .s6 .subjects input{
-        appearance:none;
-        display: none;
-        /* content: attr(value); */
-    }
-    .s6 .subjects label{
-        /* border: 1px solid black; */
-        padding: 0.75em 1.2em;
-        border-radius: 3em;
-        background-color: white;
-        color: #525252;
-        width: fit-content;
-        font-size: 0.4em;
-        text-align: center;
-        flex-grow: 1;
-    }
-    .s6 .subjects label:hover{
-        cursor: pointer;
-    }
-    .s6 .subjects input:checked + label{
-        background-color: #262626;
-        color: white;
-        font-weight: 600;
-        cursor:auto;
-        user-select: none;
-    }
-    
-    .s6 textarea{
-        /* appearance: none; */
-        min-height: 40%;
-        /* height:5em; */
-        resize:none;
-        overflow: auto;
-    }
-  
-    .s6 .captcha{
-        display: flex;
-        width: 100%;
-        gap: 0.15em;
-    }
-    .s6 .captcha > *{
-        width: fit-content;
-        font-size: 0.4em;
-        align-self: center;      
-    }
-    
-    .s6 input[type="submit"]{
-        background-color:var(--CTA-BGcolor);
-        color: var(--CTA-TXTcolor);   
-    }
-
-    
-
-    
-
-    .s6 .captcha,
-    .s6 textarea,
-    .s6 input[type="submit"]{
-        margin-top: 1em;
-    }
-
-
-    .s6 input[type="checkbox"]{
-        appearance: none;
-        backdrop-filter: blur(148px);
-        background-color: hsla(0, 0, 95%, 1);
-        aspect-ratio: 1/1;
-        border-radius: 0.2em;
-    }
-
-    .s6 input[type="checkbox"]:checked{
-        backdrop-filter: blur(0);
-        background-color: var(--CTA-BGcolor);
-        color: var(--CTA-TXTcolor);
-        /* appearance: checked; */
-    }
-    
-    .s6 input[type="checkbox"]:checked::after{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%, -50%);
-        content:"🗸";
-        font-size: 2em;
-    }
-
-    .s6 input[type="submit"]{
-        font-size: 0.5em;
-        padding: 0.4em 1em;
-        /* margin-bottom: -1em; */
-    }
-
-    .s6::before{
-        content:url("maTete.png");
-        position: absolute;
-        transform: scale(0.5) rotate(-5deg);
-        top: -100vh;
-        left: 48vw;
-        z-index: -80;
-    }
-
-    .s6::after{
-        content: url("GreenEllipse.svg");
-        position: absolute;
-        top: 50vh;
-        left: 70vw;
-        /* left: clamp(5em, 10em); */
-        width: max(min(10em, 12em), 12em);
-        height: max(min(10em, 12em), 12em);
-        z-index: -100;
-    }
-
-    .s6 .socialmediaContact{
-        display: inline-block;
-        position: relative;
-        left: 0;
-        margin-top: 1.25em;
-    }
-
-    .s6 .socialmediaContact a:link{
+    .s6 a{
+        margin: auto .5em;
         text-decoration: none;
     }
-
-    .s6 .socialmediaContact a{
-        /* position: absolute; */
-        display: inline-block;
-        margin: 0;
+    .s6 a svg{
+        width: 2em;
+        text-align: center;
+        vertical-align: middle;
     }
 
-    .s6 .socialmediaContact *{
-        fill: var(--CTA-BGcolor);
-        --SocialIconWidthANDHieght : 64px;
-        width: var(--SocialIconWidthANDHieght);
-        height: var(--SocialIconWidthANDHieght);
-    }
 
+    .s6 .cbt{
+        text-decoration: none;
+        font-size: .5em;
+        font-weight: 600;
+        letter-spacing: .1em;
+        color: white;
+        background-color: black;
+        display: inline;
+        margin-top: 2em;
+        padding: .6em 1em;
+        border-radius: 2em;
+        
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+    }
+      
+    .s6 .cbt:hover {
+        /* box-shadow: none; */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+        /* color: #777; */
+      }
+      
+    .s6 .cbt:active {
+        /* box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25); */
+        box-shadow: none;
+      }
+    
 
 
 
@@ -1597,9 +1424,7 @@ body{
 
     @media (max-width: 376px){
 
-        *{
-            --S1marginBottomAndImageTopShift: 50vh;
-        }
+        
         .s1{
             /* top: 5em; */
             /* padding-top:0;
@@ -1610,7 +1435,7 @@ body{
         .s1__image{
             position: absolute;
             width: 100vw;
-            top: var(--S1marginBottomAndImageTopShift);
+            top: 50vh;
             left: -2.5vw;
         }
 

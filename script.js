@@ -26,3 +26,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 // showYeux();
 // hideTete();
+
+/**
+ * Email obfuscation technique
+ */
+
+ adress = 'mailt' + 'o:nadir.' + 'zegu' + 'eur@gm' + 'ail.com';
+ document.getElementsByClassName('Email')[0].title = adress;
+ function mail(){window.location.href = adress;}

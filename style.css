@@ -15,7 +15,7 @@
 
 *{
     box-sizing: border-box;
-    border: 1px dashed rgb(67, 104, 7, 0.2);
+    /* border: 1px dashed rgb(67, 104, 7, 0.2); */
     margin: 0;
     padding: 0;
 }
@@ -91,9 +91,13 @@ body{
 }
 
 .monLogo{
-    width: 29px;
+    font-size: 2em;
+    font-style: italic;
 }
 
+.monLogo #lastname{
+    font-weight: 500;
+}
 .section{
     /* position: relative; */
     width: 100%;
@@ -638,6 +642,8 @@ body{
     top: -0.20em;
     font-size: 6em;
     color: var(--bk-color-darker);
+    /* color: var(); */
+    /* text-shadow: 1px 1px 0.02em var(--CTA-BGcolor), -1px -1px 0.02em var(--CTA-BGcolor), 1px 0 0.02em var(--CTA-BGcolor), 0 1px 0.02em var(--CTA-BGcolor); */
     counter-increment: number;
     content: counter(number);
     z-index: -1;
@@ -909,7 +915,7 @@ body{
     .s5{
       
         padding: 3em;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .s5::before,
@@ -945,7 +951,7 @@ body{
         /* grid-auto-rows: auto; */
         gap: 3em;
         height: fit-content;
-        border: 1px solid green;
+        /* border: 1px solid green; */
         /* min-width: 768px; */
 
         
@@ -1103,9 +1109,10 @@ body{
 
     @media (max-width: 768px){
         
-        .menu a{
+        .menu a:not(a[href="#qui-suis-je"]){
             display: none;
         }
+
         .s1::before{    
             position: fixed;
             top: -10em;

@@ -29,6 +29,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /**
  * Email obfuscation technique
+ * Source : https://stackoverflow.com/questions/41318987/hide-email-address-from-bots-keep-mailto#answer-67950224
  */
 
  adress = 'mailt' + 'o:nadir.' + 'zegu' + 'eur@gm' + 'ail.com';

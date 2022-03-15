@@ -211,7 +211,7 @@ body{
 } */
 
 .s1::before{    
-    content: url("nameTile.svg");
+    content: url("assets/images/nameTile.svg");
     position: fixed;
     top: -10em;
     left: -2em;
@@ -222,7 +222,7 @@ body{
 }
 
 .s1::after{
-    content: url("GreenEllipse.svg");
+    content: url("assets/images/GreenEllipse.svg");
     position: absolute;
     top: 3em;
     left: 5em;
@@ -465,7 +465,7 @@ body{
     text-align: center;
     /* margin-top: 1.5em; */
     padding: 0 5em;
-    background-image: url("GreenEllipse.svg");
+    background-image: url("assets/images/GreenEllipse.svg");
     background-repeat: no-repeat;
     background-size: 15em;
     background-position: center;

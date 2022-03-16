@@ -1,5 +1,4 @@
 #Git ignore file
 *
 /*
-!src
-!assets
+!public
